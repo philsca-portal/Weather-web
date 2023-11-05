@@ -29,9 +29,9 @@ const HourlyForecast: React.FC<InfoOverviewProps> = ({
     }
 
     return(
-        <div className={`lg:mt-4 w-full ${am.includes(currentStatus)? 'bg-[#eaecef]' : 'bg-[#0B131E]'} rounded-xl`}>
+        <div className={`lg:mt-4 w-full ${am.includes(currentStatus)? 'bg-[#202b3c]' : 'bg-[#202b3c]'} rounded-xl`}>
             <div className="p-5">
-                <h1 className={`${am.includes(currentStatus)? 'text-[#757e8a]' : 'text-[#c4cad3]'} font-semibold text-sm`}>TODAY&apos;S FORECAST</h1>
+                <h1 className={`${am.includes(currentStatus)? 'text-[#c4cad3]' : 'text-[#c4cad3]'} font-semibold text-sm`}>TODAY&apos;S FORECAST</h1>
                 <div className="flex flex-wrap items-center justify-center mt-4">
                     {hourArray.map((value,index) => (
                         <ForecastHours key={index} value={value} addRightBorder={index < 5} />  

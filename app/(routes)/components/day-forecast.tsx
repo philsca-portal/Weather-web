@@ -16,9 +16,9 @@ const DayForcast: React.FC<DayForcastProps> = ({
     const currentStatus = Number(new Date().getHours().toFixed());
 
     return(
-        <div className={`mt-4 ${am.includes(currentStatus)? 'bg-[#eaecef]' : 'bg-[#0B131E]'} rounded-xl`}>
+        <div className={`mt-4 ${am.includes(currentStatus)? 'bg-[#202b3c]' : 'bg-[#202b3c]'} rounded-xl`}>
             <div className="p-5">
-                <h1 className={`${am.includes(currentStatus)? 'text-[#757e8a]' : 'text-[#c4cad3]'} font-semibold text-sm`}>WEEKLY FORECAST</h1>
+                <h1 className={`${am.includes(currentStatus)? 'text-[#c4cad3]' : 'text-[#c4cad3]'} font-semibold text-sm`}>WEEKLY FORECAST</h1>
                 <div className="grid grid-cols-2 mt-4">
                     {data?.forecast.forecastday.map((day,index) => (
                         <ForecastDays key={index} value={day}/>

@@ -20,9 +20,9 @@ const ForecastHours: React.FC<ForecastHoursProps> = ({
     return(
         <div className={`flex flex-col m-4 justify-center items-center gap-1 ${addRightBorder? 'lg:border-r' : ''} border-[#314159]`}>
             <div className="mr-8 flex flex-col justify-center items-center">
-                <h1 className={`${am.includes(currentStatus)? 'text-[#757e8a]' : 'text-[#c4cad3]'} text-1xl lg:text-xs font-semibold`}>{format(parseISO(value.time), 'h:mm a')}</h1>
+                <h1 className={`${am.includes(currentStatus)? 'text-[#c4cad3]' : 'text-[#c4cad3]'} text-1xl lg:text-xs font-semibold`}>{format(parseISO(value.time), 'h:mm a')}</h1>
                 <img src={iconUrl} alt="" />
-                <h1 className={`${am.includes(currentStatus)? 'text-black' : 'text-white'} font-bold text-lg`}>{value.temp_c}°</h1>
+                <h1 className={`${am.includes(currentStatus)? 'text-white' : 'text-white'} font-bold text-lg`}>{value.temp_c}°</h1>
             </div>
         </div>
     )

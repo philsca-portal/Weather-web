@@ -14,7 +14,7 @@ const IndividualCondition: React.FC<IndividualConditionProps> = ({
 
     return(
         <div className="flex flex-col">
-            <h1 className={`${am.includes(currentStatus)? 'text-[#757e8a]' : 'text-[#c4cad3]'} font-semibold text-sm`}>CONDITION</h1>
+            <h1 className={`${am.includes(currentStatus)? 'text-[#c4cad3]' : 'text-[#c4cad3]'} font-semibold text-sm`}>CONDITION</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 w-ful gap-4 mt-4">
                 {value?.map((item,index) => (
                     <ValueCondition key={index} value={item} />

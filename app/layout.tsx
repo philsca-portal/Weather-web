@@ -19,7 +19,7 @@ export default function RootLayout({
   const currentStatus = Number(new Date().getHours().toFixed());
 
   return (
-    <html lang="en" className={`bg-${currentStatus >= 0 && currentStatus <= 12 ? 'white' : 'black'}`}>
+    <html lang="en" className={`bg-${currentStatus >= 0 && currentStatus <= 12 ? 'black' : 'black'}`}>
       <body className={`${inter.className}`}>
         {children}
       </body>
